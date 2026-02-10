@@ -86,6 +86,29 @@ window.addEventListener('scroll', function() {
 });
 
 // ========================================
+// MOBILE HAMBURGER MENU
+// ========================================
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const navCta = document.querySelector('.nav-cta');
+
+if (hamburger) {
+    hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navLinks.classList.toggle('open');
+        if (navCta) navCta.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('open');
+            if (navCta) navCta.classList.remove('open');
+        });
+    });
+}
+
+// ========================================
 // SMOOTH SCROLL FOR NAV LINKS
 // ========================================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
