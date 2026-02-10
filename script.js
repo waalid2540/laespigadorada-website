@@ -365,6 +365,29 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
 setLanguage('es');
 
 // ========================================
+// FORCE HERO VIDEO TO LOOP CONTINUOUSLY
+// ========================================
+const heroVideo = document.querySelector('.hero-image-wrapper video');
+if (heroVideo) {
+    heroVideo.loop = true;
+    heroVideo.muted = true;
+    heroVideo.playsInline = true;
+
+    // Force play on load
+    heroVideo.play().catch(() => {});
+
+    // If it ever pauses or ends, restart it
+    heroVideo.addEventListener('pause', () => heroVideo.play().catch(() => {}));
+    heroVideo.addEventListener('ended', () => { heroVideo.currentTime = 0; heroVideo.play().catch(() => {}); });
+
+    // Also retry on user interaction (mobile Safari needs this)
+    document.addEventListener('touchstart', function startVideo() {
+        heroVideo.play().catch(() => {});
+        document.removeEventListener('touchstart', startVideo);
+    }, { once: true });
+}
+
+// ========================================
 // CONSOLE MESSAGE
 // ========================================
 console.log('%c🌾 Bienvenidos a La Espiga Dorada! 🌾',
