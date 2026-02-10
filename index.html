@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Espiga Dorada - Authentic Mexican Bakery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Pacifico&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="La Espiga Dorada" class="logo-img">
+            <span class="logo-text">La Espiga Dorada</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" data-en="Home" data-es="Inicio">Inicio</a></li>
+            <li><a href="#cakes" data-en="Cakes" data-es="Pasteles">Pasteles</a></li>
+            <li><a href="#about" data-en="About" data-es="Nosotros">Nosotros</a></li>
+            <li><a href="#menu" data-en="Menu" data-es="Menú">Menú</a></li>
+            <li><a href="#reviews" data-en="Reviews" data-es="Reseñas">Reseñas</a></li>
+            <li><a href="#contact" data-en="Contact" data-es="Contacto">Contacto</a></li>
+        </ul>
+        <a href="#order" class="nav-cta" data-en="Order Now" data-es="Ordenar Ahora">Ordenar Ahora</a>
+        <div class="lang-toggle">
+            <button class="lang-btn" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-badge" data-en="Authentic Mexican Bakery" data-es="Panadería Mexicana Auténtica">Panadería Mexicana Auténtica</span>
+                <h1 data-en="The Taste of Mexico in Every Bite" data-es="El Sabor de México en Cada Mordida">El Sabor de México en Cada Mordida</h1>
+                <p data-en="Traditional sweet bread, cakes made with love, and the authentic flavor that takes you home. Freshly baked every day in Taylorsville, Utah." data-es="Pan dulce tradicional, pasteles hechos con amor, y el auténtico sabor que te transporta a casa. Horneado fresco todos los días en Taylorsville, Utah.">Pan dulce tradicional, pasteles hechos con amor, y el auténtico sabor que te transporta a casa. Horneado fresco todos los días en Taylorsville, Utah.</p>
+                <div class="hero-buttons">
+                    <a href="#order" class="btn btn-primary" data-en="Order Cake" data-es="Ordenar Pastel">Ordenar Pastel</a>
+                    <a href="#menu" class="btn btn-secondary" data-en="View Menu" data-es="Ver Menú">Ver Menú</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <video src="images/pink-cake.mp4" autoplay loop muted playsinline alt="Pastel Rosa"></video>
+                    <div class="hero-sparkle sparkle-1">✨</div>
+                    <div class="hero-sparkle sparkle-2">🌾</div>
+                    <div class="hero-sparkle sparkle-3">💛</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- FEATURED CAKES SHOWCASE -->
+    <section id="cakes" class="cakes-showcase">
+        <div class="section-header">
+            <span class="section-badge" data-en="Our Creations" data-es="Nuestras Creaciones">Nuestras Creaciones</span>
+            <h2 data-en="Cakes & Sweet Bread" data-es="Pasteles y Pan Dulce">Pasteles y Pan Dulce</h2>
+            <p data-en="Each piece is a work of art, made with premium ingredients and lots of love" data-es="Cada pieza es una obra de arte, hecha con ingredientes de primera y mucho cariño">Cada pieza es una obra de arte, hecha con ingredientes de primera y mucho cariño</p>
+        </div>
+        <div class="cakes-grid">
+            <div class="cake-card cake-large">
+                <img src="images/wedding-cake.jpeg" alt="Pastel de Boda">
+                <div class="cake-overlay">
+                    <h3 data-en="Wedding Cakes" data-es="Pasteles de Boda">Pasteles de Boda</h3>
+                    <p data-en="Make your day magical" data-es="Haz tu día mágico">Haz tu día mágico</p>
+                </div>
+            </div>
+            <div class="cake-card">
+                <img src="images/birthday-cake.jpeg" alt="Pastel de Cumpleaños">
+                <div class="cake-overlay">
+                    <h3 data-en="Birthday Cakes" data-es="Pasteles de Cumpleaños">Pasteles de Cumpleaños</h3>
+                    <p data-en="Celebrate in style" data-es="Celebra con estilo">Celebra con estilo</p>
+                </div>
+            </div>
+            <div class="cake-card">
+                <img src="images/tiramisu-cake.jpeg" alt="Pastel de Tiramisú">
+                <div class="cake-overlay">
+                    <h3 data-en="Specialty Cakes" data-es="Pasteles Especiales">Pasteles Especiales</h3>
+                    <p data-en="Unique flavors" data-es="Sabores únicos">Sabores únicos</p>
+                </div>
+            </div>
+            <div class="cake-card">
+                <img src="images/fruit-tart.jpeg" alt="Tarta de Frutas">
+                <div class="cake-overlay">
+                    <h3 data-en="Fresh Tarts" data-es="Tartas Frescas">Tartas Frescas</h3>
+                    <p data-en="Seasonal fruits" data-es="Frutas de temporada">Frutas de temporada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="about-wave-top">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L60 15C120 30 240 60 360 75C480 90 600 90 720 82.5C840 75 960 60 1080 52.5C1200 45 1320 45 1380 45L1440 45V0H1380C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0H0Z" fill="white"/>
+            </svg>
+        </div>
+        <div class="about-content">
+            <div class="section-header">
+                <span class="section-badge" data-en="Our Story" data-es="Nuestra Historia">Nuestra Historia</span>
+                <h2 data-en="Family Tradition" data-es="Tradición Familiar">Tradición Familiar</h2>
+            </div>
+            <p class="about-text" data-en="La Espiga Dorada was born from the dream of sharing the authentic flavors of Mexico with our community in Utah. Every recipe is a family treasure, every sweet bread a memory of home. We bake with the same love our grandmothers taught us." data-es="La Espiga Dorada nació del sueño de compartir los sabores auténticos de México con nuestra comunidad en Utah. Cada receta es un tesoro familiar, cada pan dulce una memoria de hogar. Horneamos con el mismo amor que nuestras abuelas nos enseñaron.">La Espiga Dorada nació del sueño de compartir los sabores auténticos de México con nuestra comunidad en Utah. Cada receta es un tesoro familiar, cada pan dulce una memoria de hogar. Horneamos con el mismo amor que nuestras abuelas nos enseñaron.</p>
+            <div class="about-features">
+                <div class="feature-card">
+                    <div class="feature-icon">🥐</div>
+                    <h3 data-en="Traditional Recipes" data-es="Recetas Tradicionales">Recetas Tradicionales</h3>
+                    <p data-en="Authentic flavors of Mexico" data-es="Sabores auténticos de México">Sabores auténticos de México</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌅</div>
+                    <h3 data-en="Freshly Baked" data-es="Horneado Fresco">Horneado Fresco</h3>
+                    <p data-en="Every day from early morning" data-es="Todos los días desde temprano">Todos los días desde temprano</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3 data-en="Family Business" data-es="Negocio Familiar">Negocio Familiar</h3>
+                    <p data-en="Made with love" data-es="Hecho con amor">Hecho con amor</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3 data-en="Premium Quality" data-es="Calidad Premium">Calidad Premium</h3>
+                    <p data-en="Only the finest ingredients" data-es="Solo los mejores ingredientes">Solo los mejores ingredientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="menu">
+        <div class="section-header">
+            <span class="section-badge" data-en="Mexican Delights" data-es="Delicias Mexicanas">Delicias Mexicanas</span>
+            <h2 data-en="Our Menu" data-es="Nuestro Menú">Nuestro Menú</h2>
+            <p data-en="Traditional sweet bread and cakes for every occasion" data-es="Pan dulce tradicional y pasteles para toda ocasión">Pan dulce tradicional y pasteles para toda ocasión</p>
+        </div>
+
+        <div class="menu-tabs">
+            <button class="menu-tab active" data-tab="pan-dulce" data-en="Sweet Bread" data-es="Pan Dulce">Pan Dulce</button>
+            <button class="menu-tab" data-tab="pasteles" data-en="Cakes" data-es="Pasteles">Pasteles</button>
+            <button class="menu-tab" data-tab="especialidades" data-en="Specialties" data-es="Especialidades">Especialidades</button>
+        </div>
+
+        <div class="menu-content">
+            <div class="menu-grid" id="pan-dulce-menu">
+                <div class="menu-card">
+                    <div class="menu-card-icon">🍞</div>
+                    <h4>Conchas</h4>
+                    <p data-en="Vanilla, chocolate, pink, yellow" data-es="Vainilla, chocolate, rosa, amarillo">Vainilla, chocolate, rosa, amarillo</p>
+                    <span class="menu-price">$1.50</span>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-icon">🥐</div>
+                    <h4>Cuernos</h4>
+                    <p data-en="Butter or filled" data-es="Mantequilla o rellenos">Mantequilla o rellenos</p>
+                    <span class="menu-price">$2.00</span>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-icon">🍩</div>
+                    <h4>Donas</h4>
+                    <p data-en="Glazed and sugared" data-es="Glaseadas y azucaradas">Glaseadas y azucaradas</p>
+                    <span class="menu-price">$1.25</span>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-icon">🥧</div>
+                    <h4>Empanadas</h4>
+                    <p data-en="Pineapple, pumpkin, apple" data-es="Piña, calabaza, manzana">Piña, calabaza, manzana</p>
+                    <span class="menu-price">$2.50</span>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-icon">🍪</div>
+                    <h4>Polvorones</h4>
+                    <p data-en="Traditional and walnut" data-es="Tradicionales y de nuez">Tradicionales y de nuez</p>
+                    <span class="menu-price">$1.75</span>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-icon">🎂</div>
+                    <h4>Tres Leches</h4>
+                    <p data-en="Our house favorite" data-es="Nuestro favorito de la casa">Nuestro favorito de la casa</p>
+                    <span class="menu-price" data-en="$4.50/slice" data-es="$4.50/rebanada">$4.50/rebanada</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS -->
+    <section id="reviews" class="reviews">
+        <div class="reviews-wave-top">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+            </svg>
+        </div>
+        <div class="section-header">
+            <span class="section-badge" data-en="What They Say" data-es="Lo Que Dicen">Lo Que Dicen</span>
+            <h2 data-en="Customer Reviews" data-es="Reseñas de Clientes">Reseñas de Clientes</h2>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text" data-en="&quot;The best tres leches I've tried outside of Mexico! It took me back to my grandma's kitchen. 100% recommended!&quot;" data-es="&quot;El tres leches más rico que he probado fuera de México! Me transportó a la cocina de mi abuelita. 100% recomendado!&quot;">"El tres leches más rico que he probado fuera de México! Me transportó a la cocina de mi abuelita. 100% recomendado!"</p>
+                <div class="review-author">
+                    <div class="author-avatar">R</div>
+                    <div class="author-info">
+                        <h4>Rosa M.</h4>
+                        <span>Tres Leches</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card featured">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text" data-en="&quot;The conchas are perfect - crispy on the outside, soft on the inside. I come every Saturday for my dozen. The best Mexican bakery in Utah!&quot;" data-es="&quot;Las conchas son perfectas - crujientes por fuera, suavecitas por dentro. Vengo cada sábado por mi docena. ¡La mejor panadería mexicana en Utah!&quot;">"Las conchas son perfectas - crujientes por fuera, suavecitas por dentro. Vengo cada sábado por mi docena. ¡La mejor panadería mexicana en Utah!"</p>
+                <div class="review-author">
+                    <div class="author-avatar">C</div>
+                    <div class="author-info">
+                        <h4>Carlos G.</h4>
+                        <span data-en="Regular Customer" data-es="Cliente Frecuente">Cliente Frecuente</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text" data-en="&quot;We ordered the wedding cake and it was spectacular. Beautiful and delicious. Everyone asked where it was from!&quot;" data-es="&quot;Ordenamos el pastel de boda y fue espectacular. Hermoso y delicioso. Todo el mundo preguntó de dónde era!&quot;">"Ordenamos el pastel de boda y fue espectacular. Hermoso y delicioso. Todo el mundo preguntó de dónde era!"</p>
+                <div class="review-author">
+                    <div class="author-avatar">L</div>
+                    <div class="author-info">
+                        <h4>Lupita S.</h4>
+                        <span data-en="Wedding Cake" data-es="Pastel de Boda">Pastel de Boda</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOM CAKE ORDER CTA -->
+    <section id="order" class="order-cta">
+        <div class="order-content">
+            <div class="order-text">
+                <span class="section-badge" data-en="Custom Cakes" data-es="Pasteles Personalizados">Pasteles Personalizados</span>
+                <h2 data-en="Your Dream Cake" data-es="Tu Pastel Soñado">Tu Pastel Soñado</h2>
+                <p data-en="Have a special occasion? We create custom cakes for quinceañeras, weddings, birthdays, baptisms and more. Tell us your idea!" data-es="¿Tienes una ocasión especial? Creamos pasteles personalizados para quinceañeras, bodas, cumpleaños, bautizos y más. ¡Platícanos tu idea!">¿Tienes una ocasión especial? Creamos pasteles personalizados para quinceañeras, bodas, cumpleaños, bautizos y más. ¡Platícanos tu idea!</p>
+                <ul class="order-perks">
+                    <li data-en="✨ Free design consultation" data-es="✨ Consulta de diseño gratis">✨ Consulta de diseño gratis</li>
+                    <li data-en="🎨 Full customization" data-es="🎨 Personalización total">🎨 Personalización total</li>
+                    <li data-en="🚗 Delivery available" data-es="🚗 Entrega disponible">🚗 Entrega disponible</li>
+                    <li data-en="💛 Made with lots of love" data-es="💛 Hecho con mucho amor">💛 Hecho con mucho amor</li>
+                </ul>
+            </div>
+            <div class="order-form-wrapper">
+                <h3 data-en="Request a Quote" data-es="Solicitar Cotización">Solicitar Cotización</h3>
+                <form class="order-form">
+                    <input type="text" data-en-placeholder="Your Name" data-es-placeholder="Tu Nombre" placeholder="Tu Nombre" required>
+                    <input type="email" data-en-placeholder="Email Address" data-es-placeholder="Correo Electrónico" placeholder="Correo Electrónico" required>
+                    <input type="tel" data-en-placeholder="Phone" data-es-placeholder="Teléfono" placeholder="Teléfono">
+                    <select required>
+                        <option value="" data-en="Cake Type" data-es="Tipo de Pastel">Tipo de Pastel</option>
+                        <option value="cumpleanos" data-en="Birthday Cake" data-es="Pastel de Cumpleaños">Pastel de Cumpleaños</option>
+                        <option value="quinceanera">Quinceañera</option>
+                        <option value="boda" data-en="Wedding Cake" data-es="Pastel de Boda">Pastel de Boda</option>
+                        <option value="bautizo" data-en="Baptism / First Communion" data-es="Bautizo / Primera Comunión">Bautizo / Primera Comunión</option>
+                        <option value="graduacion" data-en="Graduation" data-es="Graduación">Graduación</option>
+                        <option value="otro" data-en="Other" data-es="Otro">Otro</option>
+                    </select>
+                    <textarea data-en-placeholder="Tell us about your dream cake..." data-es-placeholder="Cuéntanos sobre tu pastel soñado..." placeholder="Cuéntanos sobre tu pastel soñado..." rows="3"></textarea>
+                    <button type="submit" class="btn btn-primary" data-en="Send Request 💌" data-es="Enviar Solicitud 💌">Enviar Solicitud 💌</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY / SWEET MOMENTS -->
+    <section id="gallery" class="gallery">
+        <div class="section-header">
+            <span class="section-badge" data-en="Follow Us" data-es="Síguenos">Síguenos</span>
+            <h2 data-en="Sweet Moments" data-es="Momentos Dulces">Momentos Dulces</h2>
+            <p data-en="A glimpse of our bakery and its creations" data-es="Un vistazo a nuestra panadería y sus creaciones">Un vistazo a nuestra panadería y sus creaciones</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/birthday-cake.jpeg" alt="Pastel de Cumpleaños">
+                <div class="gallery-overlay">
+                    <span>💛</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/tiramisu-cake.jpeg" alt="Tiramisú">
+                <div class="gallery-overlay">
+                    <span>💛</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/wedding-cake.jpeg" alt="Pastel de Boda">
+                <div class="gallery-overlay">
+                    <span>💛</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/fruit-tart.jpeg" alt="Tarta de Frutas">
+                <div class="gallery-overlay">
+                    <span>💛</span>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.instagram.com/laespigadoradaut" target="_blank" class="instagram-link" data-en="Follow us @laespigadoradaut 🌾" data-es="Síguenos @laespigadoradaut 🌾">Síguenos @laespigadoradaut 🌾</a>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="contact-wave-top">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L60 15C120 30 240 60 360 75C480 90 600 90 720 82.5C840 75 960 60 1080 52.5C1200 45 1320 45 1380 45L1440 45V0H1380C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0H0Z" fill="white"/>
+            </svg>
+        </div>
+        <div class="section-header">
+            <span class="section-badge" data-en="Visit Us" data-es="Visítanos">Visítanos</span>
+            <h2 data-en="Our Bakery" data-es="Nuestra Panadería">Nuestra Panadería</h2>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <h3 data-en="Location" data-es="Ubicación">Ubicación</h3>
+                    <p>2292 W 5400 S</p>
+                    <p>Taylorsville, UT 84129</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🕐</div>
+                    <h3 data-en="Hours" data-es="Horario">Horario</h3>
+                    <p data-en="Mon - Sat: 6am - 8pm" data-es="Lun - Sáb: 6am - 8pm">Lun - Sáb: 6am - 8pm</p>
+                    <p data-en="Sunday: 7am - 6pm" data-es="Domingo: 7am - 6pm">Domingo: 7am - 6pm</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">📞</div>
+                    <h3 data-en="Contact" data-es="Contacto">Contacto</h3>
+                    <p>(801) 809-6512</p>
+                    <p>@laespigadoradaut</p>
+                </div>
+            </div>
+            <div class="contact-map">
+                <div class="map-placeholder">
+                    <img src="images/logo.jpg" alt="La Espiga Dorada" class="map-logo">
+                    <p data-en="Find us in Taylorsville, Utah" data-es="Encuéntranos en Taylorsville, Utah">Encuéntranos en Taylorsville, Utah</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=2292+W+5400+S+Taylorsville+UT" target="_blank" class="btn btn-secondary" style="margin-top: 15px;" data-en="View on Map" data-es="Ver en Mapa">Ver en Mapa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/logo.jpg" alt="La Espiga Dorada" class="logo-img footer-logo-img">
+                <span class="logo-text">La Espiga Dorada</span>
+                <p data-en="Authentic Mexican Bakery" data-es="Panadería Mexicana Auténtica">Panadería Mexicana Auténtica</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home" data-en="Home" data-es="Inicio">Inicio</a>
+                <a href="#cakes" data-en="Cakes" data-es="Pasteles">Pasteles</a>
+                <a href="#menu" data-en="Menu" data-es="Menú">Menú</a>
+                <a href="#contact" data-en="Contact" data-es="Contacto">Contacto</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/laespigadoradaut" target="_blank" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Facebook</a>
+                <a href="tel:8018096512" class="social-link" data-en="Call" data-es="Llamar">Llamar</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-en="Made with 🌾 and 💛 by La Espiga Dorada" data-es="Hecho con 🌾 y 💛 por La Espiga Dorada">Hecho con 🌾 y 💛 por La Espiga Dorada</p>
+            <p class="copyright" data-en="&copy; 2024 La Espiga Dorada Bakery. All rights reserved." data-es="&copy; 2024 La Espiga Dorada Bakery. Todos los derechos reservados.">&copy; 2024 La Espiga Dorada Bakery. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
